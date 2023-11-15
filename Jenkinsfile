@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('git pull'){
                 steps{
-                git url: 'https://github.com/sravya-nanduri/netflix.git', branch:'main'
+                git url: 'https://github.com/sravya-nanduri/react-app.git', branch:'master'
                 }
             }
             stage('building the app'){
