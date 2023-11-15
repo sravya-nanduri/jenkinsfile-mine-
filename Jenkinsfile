@@ -19,7 +19,7 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                scp root@3.110.94.54:~/new/build/* user@65.0.30.31:/var/www/html
+                scp root@13.233.89.31:~/new/build/* user@65.0.30.31:/var/www/html
                 '''
                 }
             }
