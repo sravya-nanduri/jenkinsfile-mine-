@@ -20,7 +20,7 @@ pipeline{
                 steps{
                 sh '''
                 sudo su -
-                scp -o StrictHostKeyChecking=no -o PasswordAuthentication=yes build user@65.0.30.31:/var/www/html
+                scp -r build user@65.0.30.31:/var/www/html
 
 
                 '''
