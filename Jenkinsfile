@@ -19,7 +19,8 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                scp -i /root/.ssh/id_rsa -r build user@65.0.30.31:/var/www/html
+                ssh user@65.0.30.31
+                // scp -i /root/.ssh/id_rsa -r build user@65.0.30.31:/var/www/html
 
 
                 '''
