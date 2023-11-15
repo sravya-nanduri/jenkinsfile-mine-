@@ -10,13 +10,6 @@ pipeline{
              steps{
                 sh '''
                 sudo su -
-                mkdir ~/new
-                cd ~/new
-                apt update -y
-                apt install nodejs -y
-                apt install nvm -y
-                nvm install n -y
-                n 18.18.0
                 npm install
                 npm run build
                 '''
