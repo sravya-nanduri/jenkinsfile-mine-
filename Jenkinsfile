@@ -19,7 +19,7 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                scp -o StrictHostKeyChecking=no build user@65.0.30.31:/var/www/html
+                scp -v -i /root/.ssh build/* user@65.0.30.31:/var/www/html
 
                 '''
                 }
