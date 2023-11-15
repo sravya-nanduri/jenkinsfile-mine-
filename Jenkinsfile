@@ -19,7 +19,6 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                sudo su -
                 scp -r build user@65.0.30.31:/var/www/html
 
 
