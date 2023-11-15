@@ -11,7 +11,7 @@ pipeline{
                 sh '''
                 sudo su -
                 mkdir ~/new
-                cd new
+                cd ~/new
                 apt update -y
                 apt install nodejs -y
                 apt install nvm -y
