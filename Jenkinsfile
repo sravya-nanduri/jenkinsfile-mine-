@@ -19,7 +19,7 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                scp -r build/* user@13.232.48.199:/var/www/html
+                scp -r dist/* user@13.232.48.199:/var/www/html
 
 
                 '''
