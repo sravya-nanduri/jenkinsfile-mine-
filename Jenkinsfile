@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('git pull'){
                 steps{
-                git url: 'https://github.com/sravya-nanduri/react-app.git', branch:'master'
+                git url: 'https://github.com/sravya-nanduri/rent-a-car.git', branch:'master'
                 }
             }
             stage('building the app'){
@@ -19,7 +19,7 @@ pipeline{
             stage('Copying the build file'){
                 steps{
                 sh '''
-                scp -i /root/.ssh/id_rsa -r build/* user@65.0.30.31:/var/www/html
+                scp -r build/* user@13.232.48.199:/var/www/html
 
 
                 '''
